@@ -1,0 +1,13 @@
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\bin\Debug\iGoat.Data.dll
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\bin\Debug\iGoat.Data.pdb
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\bin\Debug\iGoat.Domain.dll
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\bin\Debug\NHibernate.dll
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\bin\Debug\Iesi.Collections.dll
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\bin\Debug\Antlr3.Runtime.dll
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\bin\Debug\log4net.dll
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\bin\Debug\iGoat.Domain.pdb
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\obj\Debug\iGoat.Data.dll
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\obj\Debug\iGoat.Data.pdb
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\bin\Debug\NHibernate.Linq.dll
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\bin\Debug\FluentNHibernate.dll

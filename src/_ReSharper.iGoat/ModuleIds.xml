@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99" ModuleId="iGoat.Domain" />
+  <Module PersistentId="59B44C0D-7E40-4DA6-ABB9-EC08BFE43E26" ModuleId="iGoat.Domain.Specs" />
+  <Module PersistentId="898FB6F2-F04A-4E93-B5DA-9BF673B9D861" ModuleId="iGoat.Data" />
+  <Module PersistentId="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D" ModuleId="iGoat.Data.Specs" />
+</Modules>
