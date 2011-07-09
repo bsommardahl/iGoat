@@ -1,10 +1,9 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
 using iGoat.Domain;
+using iGoat.Domain.Entities;
 using Machine.Specifications;
-using Moq;
 using NCommons.Testing.Equality;
-using NHibernate.Linq;
-using It = Machine.Specifications.It;
+using NHibernate;
 
 namespace iGoat.Data.Specs
 {
@@ -12,28 +11,49 @@ namespace iGoat.Data.Specs
     {
         private const string Username = "some username";
         private const string Password = "some password";
-        private static User _result;
-        private static User _expectedUser;
+        private static Profile _result;
+        private static Profile _expectedProfile;
+        private static DeliveryItem _expectedDeliveryItem;
+        private static DeliveryItemType _itemType;
 
         private Establish context = () =>
                                         {
-                                            _expectedUser = new User
-                                            {
-                                                Id = 1,
-                                                Status = UserStatus.Active,
-                                            };
+                                            _itemType = new DeliveryItemType
+                                                            {
+                                                                Name = "something",
+                                                            };
 
-                                            using (var tx = Session.BeginTransaction())
+                                            _expectedDeliveryItem = new DeliveryItem
+                                                                        {
+                                                                            Status = DeliveryItemStatus.Assigned,
+                                                                            ItemType = _itemType,
+                                                                        };
+
+                                            _expectedProfile = new Profile
+                                                                   {
+                                                                       Status = UserStatus.Active,
+                                                                       UserName = Username,
+                                                                       Password = Password,
+                                                                       Items = new List<DeliveryItem>
+                                                                                   {
+                                                                                       _expectedDeliveryItem,
+                                                                                   },
+                                                                                   Deliveries = new List<Delivery>()
+                                                                   };
+
+                                            using (ITransaction tx = Session.BeginTransaction())
                                             {
-                                                Session.Save(_expectedUser);
+                                                Session.Save(_itemType);
+                                                Session.Save(_expectedDeliveryItem);
+                                                Session.Save(_expectedProfile);
                                                 tx.Commit();
                                             }
 
-                                            Session.Clear();                                            
+                                            Session.Clear();
                                         };
 
-        private Because of = () => _result = UserRepository.GetUser(Username, Password);
+        private Because of = () => _result = ProfileRepository.GetUser(Username, Password);
 
-        private It should_return_the_expected_user = () => _expectedUser.ToExpectedObject().ShouldEqual(_result);
+        private It should_return_the_expected_user = () => _expectedProfile.ToExpectedObject().ShouldEqual(_result);
     }
 }

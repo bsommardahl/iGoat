@@ -1,0 +1,6 @@
+﻿<%@ ServiceHost 
+            Language="C#" 
+            Debug="true" 
+            Service="iGoat.Service.DeliveryWebService" 
+            Factory="iGoat.Service.StructureMapServiceHostFactory"
+            CodeBehind="DeliveryWebService.svc.cs" %>

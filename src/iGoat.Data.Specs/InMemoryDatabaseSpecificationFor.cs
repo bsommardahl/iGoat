@@ -1,4 +1,6 @@
 ﻿using System;
+using FluentNHibernate.Automapping;
+using FluentNHibernate.Cfg;
 using NHibernate;
 using NHibernate.ByteCode.Castle;
 using NHibernate.Cfg;
@@ -9,7 +11,7 @@ using Environment = NHibernate.Cfg.Environment;
 
 namespace iGoat.Data.Specs
 {
-    public abstract class InMemoryDatabaseSpecificationFor<T> : IDisposable
+    public abstract class InMemoryDatabaseSpecificationFor<TEntity> : IDisposable
     {
         private static Configuration _configuration;
         private static ISessionFactory _sessionFactory;
@@ -17,8 +19,6 @@ namespace iGoat.Data.Specs
 
         protected InMemoryDatabaseSpecificationFor()
         {
-            var assemblyContainingMapping = typeof (T).Assembly;
-
             if (_configuration == null)
             {
                 _configuration = new Configuration()
@@ -27,10 +27,15 @@ namespace iGoat.Data.Specs
                     .SetProperty(Environment.ConnectionDriver, typeof (SQLite20Driver).AssemblyQualifiedName)
                     .SetProperty(Environment.ConnectionString, "data source=:memory:")
                     .SetProperty(Environment.ProxyFactoryFactoryClass,
-                                 typeof (ProxyFactoryFactory).AssemblyQualifiedName)
-                    .AddAssembly(assemblyContainingMapping);
+                                 typeof (ProxyFactoryFactory).AssemblyQualifiedName);
 
-                _sessionFactory = _configuration.BuildSessionFactory();
+                var fluent = Fluently.Configure(_configuration)
+                    .Mappings(
+                        x =>
+                        x.AutoMappings.Add(
+                            AutoMap.Assemblies(typeof(TEntity).Assembly).Where(assembly => assembly.Namespace.Contains("Entities"))));
+
+                _sessionFactory = fluent.BuildSessionFactory();
             }
 
             Session = _sessionFactory.OpenSession();

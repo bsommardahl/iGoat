@@ -43,13 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuthorizationRequest.cs" />
+    <Compile Include="Entities\Delivery.cs" />
+    <Compile Include="Entities\DeliveryItem.cs" />
+    <Compile Include="DeliveryItemStatus.cs" />
+    <Compile Include="Entities\DeliveryItemType.cs" />
+    <Compile Include="Entities\Location.cs" />
+    <Compile Include="GuidBasedAuthKeyProvider.cs" />
     <Compile Include="IAuthKeyProvider.cs" />
-    <Compile Include="ISecurityService.cs" />
-    <Compile Include="IUserRepository.cs" />
+    <Compile Include="IProfileService.cs" />
+    <Compile Include="IProfileRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SecurityService.cs" />
-    <Compile Include="Entities\User.cs" />
+    <Compile Include="ProfileService.cs" />
+    <Compile Include="Entities\Profile.cs" />
     <Compile Include="UserStatus.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

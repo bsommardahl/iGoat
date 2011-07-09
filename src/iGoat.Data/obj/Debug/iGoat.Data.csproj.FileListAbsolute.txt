@@ -11,3 +11,4 @@ C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\obj\Debug\iGoat.Data.d
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\obj\Debug\iGoat.Data.pdb
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\bin\Debug\NHibernate.Linq.dll
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\bin\Debug\FluentNHibernate.dll
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data\bin\Debug\StructureMap.dll

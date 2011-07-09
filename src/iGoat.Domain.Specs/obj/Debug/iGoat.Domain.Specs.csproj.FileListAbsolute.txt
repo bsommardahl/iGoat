@@ -9,3 +9,4 @@ C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Domain.Specs\bin\Debug\iGoa
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Domain.Specs\obj\Debug\iGoat.Domain.Specs.dll
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Domain.Specs\obj\Debug\iGoat.Domain.Specs.pdb
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Domain.Specs\bin\Debug\NCommons.Persistence.dll
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Domain.Specs\bin\Debug\FizzWare.NBuilder.dll

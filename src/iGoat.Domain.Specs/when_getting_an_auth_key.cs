@@ -1,18 +1,19 @@
-﻿using Machine.Specifications;
+﻿using iGoat.Domain.Entities;
+using Machine.Specifications;
 
 namespace iGoat.Domain.Specs
 {
-    public class when_getting_an_auth_key : given_a_security_service_context
+    public class when_getting_an_auth_key : given_a_profile_service_context
     {
         private const string ExpectedAuthKey = "expected auth key";
         private const string Username = "some username";
         private const string Password = "some password";
         private static string _result;
-        private static User _userFromRepository;
+        private static Profile _profileFromRepository;
 
         private Establish a_context = () =>
                                           {
-                                              _userFromRepository = new User
+                                              _profileFromRepository = new Profile
                                                                         {
                                                                             Status = UserStatus.Active,
                                                                         };
@@ -20,7 +21,7 @@ namespace iGoat.Domain.Specs
                                               MockUserRepository
                                                   .Setup(x => x.GetUser(Moq.It.Is<string>(y => y == Username),
                                                                         Moq.It.Is<string>(y => y == Password)))
-                                                  .Returns(_userFromRepository);
+                                                  .Returns(_profileFromRepository);
 
                                               MockAuthKeyProvider
                                                   .Setup(x => x.GetNewAuthKey(Moq.It.Is<string>(y => y == Username),
@@ -28,7 +29,7 @@ namespace iGoat.Domain.Specs
                                                   .Returns(ExpectedAuthKey);
                                           };
 
-        private Because of = () => _result = SecurityService.GetAuthKey(Username, Password);
+        private Because of = () => _result = ProfileService.GetAuthKey(Username, Password);
 
         private It should_return_the_expected_auth_key =
             () => _result.ShouldEqual(ExpectedAuthKey);
@@ -37,7 +38,7 @@ namespace iGoat.Domain.Specs
             () =>
             MockUserRepository.Verify(
                 x =>
-                x.UpdateNewAuthKey(Moq.It.Is<User>(y => y == _userFromRepository),
+                x.UpdateNewAuthKey(Moq.It.Is<Profile>(y => y == _profileFromRepository),
                                    Moq.It.Is<string>(y => y == ExpectedAuthKey)));
     }
 }

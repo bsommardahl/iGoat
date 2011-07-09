@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FizzWare.NBuilder">
+      <HintPath>..\..\lib\FizzWare.NBuilder.dll</HintPath>
+    </Reference>
     <Reference Include="Machine.Specifications, Version=0.3.0.0, Culture=neutral, PublicKeyToken=5c474de7a495cff1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\Machine.Specifications.dll</HintPath>
@@ -53,11 +56,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="given_a_security_service_context.cs" />
+    <Compile Include="given_a_profile_service_context.cs" />
     <Compile Include="when_getting_an_auth_key.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="when_getting_an_auth_key_for_inactive_user.cs" />
-    <Compile Include="when_getting_a_user.cs" />
+    <Compile Include="when_getting_a_profile.cs" />
+    <Compile Include="when_getting_a_profile_that_doesnt_exist.cs" />
+    <Compile Include="when_providing_a_new_auth_key.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\iGoat.Domain\iGoat.Domain.csproj">

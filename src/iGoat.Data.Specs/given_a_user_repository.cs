@@ -1,17 +1,13 @@
-﻿using System.Reflection;
-using iGoat.Domain;
+﻿using iGoat.Domain;
+using iGoat.Domain.Entities;
 using Machine.Specifications;
-using Moq;
 
 namespace iGoat.Data.Specs
 {
-    public abstract class given_a_user_repository : InMemoryDatabaseSpecificationFor<UserMap>
+    public abstract class given_a_user_repository : InMemoryDatabaseSpecificationFor<Profile>
     {
-        protected static IUserRepository UserRepository;
+        protected static IProfileRepository ProfileRepository;
 
-        protected Establish Context = () =>
-                                          {
-                                              UserRepository = new UserRepository(Session);
-                                          };
+        protected Establish Context = () => { ProfileRepository = new ProfileRepository(Session); };
     }
 }

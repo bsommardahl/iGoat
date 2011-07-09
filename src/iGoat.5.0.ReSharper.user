@@ -8,53 +8,66 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/f:IAuthKeyProvider.cs" caret="136" fromTop="3" />
-      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/f:UserStatus.cs" caret="128" fromTop="5" />
-      <File id="59B44C0D-7E40-4DA6-ABB9-EC08BFE43E26/f:given_a_security_service_context.cs" caret="481" fromTop="12" />
-      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/f:AuthorizationRequest.cs" caret="112" fromTop="5" />
-      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/f:IUserRepository.cs" caret="223" fromTop="5" />
-      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/f:ISecurityService.cs" caret="197" fromTop="4" />
-      <File id="59B44C0D-7E40-4DA6-ABB9-EC08BFE43E26/f:when_getting_an_auth_key.cs" caret="64" fromTop="2" />
-      <File id="59B44C0D-7E40-4DA6-ABB9-EC08BFE43E26/f:when_getting_a_user.cs" caret="558" fromTop="13" />
-      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/f:SecurityService.cs" caret="101" fromTop="0" />
-      <File id="59B44C0D-7E40-4DA6-ABB9-EC08BFE43E26/f:when_getting_an_auth_key_for_inactive_user.cs" caret="384" fromTop="11" />
-      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/f:User.cs" caret="61" fromTop="3" />
-      <File id="898FB6F2-F04A-4E93-B5DA-9BF673B9D861/f:UserRepository.cs" caret="554" fromTop="20" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:given_a_user_repository.cs" caret="191" fromTop="6" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:InMemoryDatabaseSpecificationFor.cs" caret="542" fromTop="13" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="893" fromTop="15" />
+      <File id="6752908C-A798-4952-9759-483E06B2D095/f:DeliveryItemSummary.cs" caret="109" fromTop="5" />
+      <File id="061B8F56-5CAF-499B-A69B-B7365175BBC9/f:when_getting_a_list_of_assigned_items_for_a_user.cs" caret="2366" fromTop="22" />
+      <File id="061B8F56-5CAF-499B-A69B-B7365175BBC9/f:given_a_delivery_service_context.cs" caret="472" fromTop="12" />
+      <File id="061B8F56-5CAF-499B-A69B-B7365175BBC9/f:when_getting_delivered_item_summaries.cs" caret="216" fromTop="8" />
+      <File id="6752908C-A798-4952-9759-483E06B2D095/f:DeliveryItemStatus.cs" caret="44" fromTop="1" />
+      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/f:IProfileService.cs" caret="183" fromTop="6" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_profile_with_invalid_auth_key.cs" caret="118" fromTop="4" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_profile_with_invalid_credentials.cs" caret="116" fromTop="4" />
+      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/f:DeliveryItemStatus.cs" caret="43" fromTop="1" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_updating_a_profile_with_a_new_auth_key.cs" caret="1316" fromTop="11" />
+      <File id="59B44C0D-7E40-4DA6-ABB9-EC08BFE43E26/f:when_getting_an_auth_key.cs" caret="607" fromTop="14" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_profile_by_auth_key.cs" caret="385" fromTop="0" />
+      <File id="59B44C0D-7E40-4DA6-ABB9-EC08BFE43E26/f:when_getting_a_profile_that_doesnt_exist.cs" caret="756" fromTop="16" />
+      <File id="59B44C0D-7E40-4DA6-ABB9-EC08BFE43E26/f:when_getting_an_auth_key_for_inactive_user.cs" caret="440" fromTop="12" />
+      <File id="6752908C-A798-4952-9759-483E06B2D095/f:IDeliveryWebService.cs" caret="353" fromTop="13" />
+      <File id="061B8F56-5CAF-499B-A69B-B7365175BBC9/f:when_getting_assigned_item_summaries.cs" caret="229" fromTop="8" />
+      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/d:Entities/f:DeliveryItemType.cs" caret="70" fromTop="3" />
+      <File id="898FB6F2-F04A-4E93-B5DA-9BF673B9D861/f:DeliveryItemTypeMap.cs" caret="150" fromTop="4" />
+      <File id="898FB6F2-F04A-4E93-B5DA-9BF673B9D861/f:DeliveryItemMap.cs" caret="272" fromTop="9" />
+      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/d:Entities/f:DeliveryItem.cs" caret="61" fromTop="1" />
+      <File id="6752908C-A798-4952-9759-483E06B2D095/f:DeliveryWebService.svc.cs" caret="630" fromTop="11" />
+      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/f:ProfileService.cs" caret="684" fromTop="7" />
+      <File id="59B44C0D-7E40-4DA6-ABB9-EC08BFE43E26/f:when_getting_a_profile.cs" caret="294" fromTop="0" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="2835" fromTop="31" />
+      <File id="82B5820B-8ECA-447D-A631-8C5848C1C0F8/f:when_loggin_in_a_user.cs" caret="2293" fromTop="12" />
+      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/d:Entities/f:Profile.cs" caret="105" fromTop="4" />
+      <File id="898FB6F2-F04A-4E93-B5DA-9BF673B9D861/f:ProfileMap.cs" caret="366" fromTop="14" />
+      <File id="898FB6F2-F04A-4E93-B5DA-9BF673B9D861/f:UserRepository.cs" caret="947" fromTop="12" />
     </RecentFiles>
     <RecentEdits>
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="1589" fromTop="15" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="1589" fromTop="19" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="1589" fromTop="29" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="1589" fromTop="16" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="1589" fromTop="13" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="1589" fromTop="14" />
-      <File id="898FB6F2-F04A-4E93-B5DA-9BF673B9D861/f:UserRepository.cs" caret="332" fromTop="7" />
-      <File id="898FB6F2-F04A-4E93-B5DA-9BF673B9D861/f:UserRepository.cs" caret="277" fromTop="9" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="212" fromTop="5" />
-      <File id="898FB6F2-F04A-4E93-B5DA-9BF673B9D861/f:UserRepository.cs" caret="679" fromTop="18" />
-      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/f:User.cs" caret="233" fromTop="11" />
-      <File id="898FB6F2-F04A-4E93-B5DA-9BF673B9D861/f:UserRepository.cs" caret="554" fromTop="20" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="1326" fromTop="19" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="1326" fromTop="21" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="1326" fromTop="19" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="1370" fromTop="23" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="1326" fromTop="26" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="1581" fromTop="22" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:given_a_user_repository.cs" caret="518" fromTop="34" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:given_a_user_repository.cs" caret="516" fromTop="32" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:given_a_user_repository.cs" caret="508" fromTop="16" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:given_a_user_repository.cs" caret="213" fromTop="9" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:given_a_user_repository.cs" caret="461" fromTop="15" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:InMemoryDatabaseSpecificationFor.cs" caret="1414" fromTop="31" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:InMemoryDatabaseSpecificationFor.cs" caret="1561" fromTop="27" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="1282" fromTop="16" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="596" fromTop="11" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="1109" fromTop="19" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="1282" fromTop="23" />
-      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:given_a_user_repository.cs" caret="509" fromTop="13" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="3165" fromTop="54" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_updating_a_profile_with_a_new_auth_key.cs" caret="1542" fromTop="17" />
+      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/d:Entities/f:Profile.cs" caret="415" fromTop="16" />
+      <File id="898FB6F2-F04A-4E93-B5DA-9BF673B9D861/f:ProfileMap.cs" caret="386" fromTop="31" />
+      <File id="898FB6F2-F04A-4E93-B5DA-9BF673B9D861/f:ProfileMap.cs" caret="386" fromTop="16" />
+      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/d:Entities/f:DeliveryItem.cs" caret="185" fromTop="6" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_user_by_username_and_password.cs" caret="2645" fromTop="31" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_profile_by_auth_key.cs" caret="3197" fromTop="34" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_profile_by_auth_key.cs" caret="3197" fromTop="24" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_profile_by_auth_key.cs" caret="3197" fromTop="17" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_profile_by_auth_key.cs" caret="3197" fromTop="5" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_profile_by_auth_key.cs" caret="3197" fromTop="5" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_profile_by_auth_key.cs" caret="3197" fromTop="12" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_profile_by_auth_key.cs" caret="3197" fromTop="57" />
+      <File id="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D/f:when_getting_a_profile_by_auth_key.cs" caret="385" fromTop="11" />
+      <File id="59B44C0D-7E40-4DA6-ABB9-EC08BFE43E26/f:when_getting_a_profile_that_doesnt_exist.cs" caret="756" fromTop="16" />
+      <File id="59B44C0D-7E40-4DA6-ABB9-EC08BFE43E26/f:when_getting_an_auth_key_for_inactive_user.cs" caret="1211" fromTop="22" />
+      <File id="898FB6F2-F04A-4E93-B5DA-9BF673B9D861/f:ProfileMap.cs" caret="226" fromTop="9" />
+      <File id="898FB6F2-F04A-4E93-B5DA-9BF673B9D861/f:DeliveryItemMap.cs" caret="248" fromTop="9" />
+      <File id="9D6DEC1B-D481-4B56-BC85-4A27F7BB0F99/d:Entities/f:Profile.cs" caret="129" fromTop="6" />
+      <File id="82B5820B-8ECA-447D-A631-8C5848C1C0F8/f:when_loggin_in_a_user.cs" caret="2125" fromTop="26" />
+      <File id="82B5820B-8ECA-447D-A631-8C5848C1C0F8/f:when_loggin_in_a_user.cs" caret="2125" fromTop="32" />
+      <File id="82B5820B-8ECA-447D-A631-8C5848C1C0F8/f:when_loggin_in_a_user.cs" caret="1923" fromTop="17" />
+      <File id="82B5820B-8ECA-447D-A631-8C5848C1C0F8/f:when_loggin_in_a_user.cs" caret="3568" fromTop="32" />
+      <File id="82B5820B-8ECA-447D-A631-8C5848C1C0F8/f:when_loggin_in_a_user.cs" caret="3013" fromTop="24" />
+      <File id="82B5820B-8ECA-447D-A631-8C5848C1C0F8/f:when_loggin_in_a_user.cs" caret="1103" fromTop="12" />
+      <File id="82B5820B-8ECA-447D-A631-8C5848C1C0F8/f:when_loggin_in_a_user.cs" caret="1424" fromTop="17" />
+      <File id="82B5820B-8ECA-447D-A631-8C5848C1C0F8/f:when_loggin_in_a_user.cs" caret="1877" fromTop="23" />
+      <File id="898FB6F2-F04A-4E93-B5DA-9BF673B9D861/f:UserRepository.cs" caret="534" fromTop="14" />
+      <File id="898FB6F2-F04A-4E93-B5DA-9BF673B9D861/f:ProfileMap.cs" caret="366" fromTop="14" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -70,92 +83,186 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="spec" priority="4" />
-      <Item value="new" priority="17" />
-      <Item value="_securityService" priority="0" />
-      <Item value="string" priority="10" />
-      <Item value="as" priority="2" />
-      <Item value="_result" priority="2" />
+      <Item value="spec" priority="12" />
+      <Item value="new" priority="59" />
+      <Item value="_securityService" priority="3" />
+      <Item value="string" priority="15" />
+      <Item value="as" priority="4" />
+      <Item value="_result" priority="10" />
       <Item value="_mockAuthKeyProvider" priority="1" />
-      <Item value="Mock`0" priority="1" />
-      <Item value="It" priority="2" />
-      <Item value="Moq" priority="4" />
-      <Item value="It`0" priority="5" />
-      <Item value="Username" priority="6" />
-      <Item value="Password" priority="5" />
+      <Item value="Mock`0" priority="2" />
+      <Item value="It" priority="5" />
+      <Item value="Moq" priority="7" />
+      <Item value="It`0" priority="9" />
+      <Item value="Username" priority="8" />
+      <Item value="Password" priority="12" />
       <Item value="ExpectedAuthKey" priority="1" />
-      <Item value="it" priority="1" />
-      <Item value="return" priority="2" />
-      <Item value="null" priority="0" />
+      <Item value="it" priority="2" />
+      <Item value="return" priority="9" />
+      <Item value="null" priority="2" />
       <Item value="_authKeyProvider" priority="0" />
       <Item value="userName" priority="0" />
-      <Item value="password" priority="1" />
+      <Item value="password" priority="2" />
       <Item value="_mockUserRepository" priority="2" />
-      <Item value="User`0" priority="19" />
+      <Item value="User`0" priority="24" />
       <Item value="bool" priority="2" />
       <Item value="Func&lt;IEnumerable&lt;User&gt;&gt;" priority="1" />
       <Item value="IEnumerable" priority="0" />
-      <Item value="public" priority="3" />
+      <Item value="public" priority="14" />
       <Item value="enum" priority="0" />
-      <Item value="var" priority="6" />
+      <Item value="var" priority="21" />
       <Item value="_userRepository" priority="2" />
-      <Item value="username" priority="1" />
-      <Item value="if" priority="1" />
+      <Item value="username" priority="2" />
+      <Item value="if" priority="2" />
       <Item value="Active" priority="0" />
-      <Item value="throw" priority="0" />
+      <Item value="throw" priority="1" />
       <Item value="UnauthorizedAccessException" priority="0" />
-      <Item value="abstract" priority="1" />
-      <Item value="class" priority="2" />
+      <Item value="abstract" priority="2" />
+      <Item value="class" priority="9" />
       <Item value="protected" priority="1" />
       <Item value="virtual" priority="0" />
-      <Item value="Establish`0" priority="0" />
+      <Item value="Establish`0" priority="1" />
       <Item value="given_a_security_service_context`0" priority="2" />
-      <Item value="Catch`0" priority="1" />
+      <Item value="Catch`0" priority="3" />
       <Item value="SecurityService" priority="2" />
-      <Item value="_exception" priority="1" />
+      <Item value="_exception" priority="4" />
       <Item value="MockUserRepository" priority="2" />
       <Item value="_userFromRepository" priority="0" />
-      <Item value="user" priority="2" />
-      <Item value="authKey" priority="1" />
+      <Item value="user" priority="7" />
+      <Item value="authKey" priority="5" />
       <Item value="const" priority="0" />
-      <Item value="AuthKey" priority="3" />
+      <Item value="AuthKey" priority="12" />
       <Item value="Machine.Specifications" priority="0" />
-      <Item value="ShouldEqual`1" priority="1" />
-      <Item value="Status" priority="1" />
-      <Item value="UserStatus`0" priority="1" />
+      <Item value="ShouldEqual`1" priority="2" />
+      <Item value="Status" priority="7" />
+      <Item value="UserStatus`0" priority="3" />
       <Item value="_expectedUser" priority="7" />
       <Item value="_authKey" priority="0" />
       <Item value="authorizationRequest" priority="1" />
-      <Item value="User" priority="2" />
+      <Item value="User" priority="4" />
       <Item value="AuthorizationRequest" priority="0" />
       <Item value="AuthKe" priority="0" />
       <Item value="Inactive" priority="0" />
-      <Item value="UserRepository" priority="1" />
+      <Item value="UserRepository" priority="3" />
       <Item value="MockSession" priority="4" />
-      <Item value="_session" priority="0" />
+      <Item value="_session" priority="10" />
       <Item value="ListInitExpression`0" priority="0" />
       <Item value="_listOfUsers" priority="1" />
       <Item value="Expression`0" priority="0" />
       <Item value="Func" priority="0" />
-      <Item value="List" priority="2" />
+      <Item value="List" priority="9" />
       <Item value="IList`0" priority="0" />
       <Item value="T`0" priority="1" />
       <Item value="SessionException`0" priority="0" />
-      <Item value="typeof" priority="1" />
+      <Item value="typeof" priority="3" />
       <Item value="assemblyContainingMapping" priority="0" />
-      <Item value="Session" priority="1" />
+      <Item value="Session" priority="4" />
+      <Item value="TMap`0" priority="0" />
+      <Item value="_configuration" priority="0" />
+      <Item value="x" priority="2" />
+      <Item value="UserName" priority="6" />
+      <Item value="ExceptionResult`0" priority="0" />
+      <Item value="Exception" priority="1" />
+      <Item value="UnauthorizedAccessException`0" priority="1" />
+      <Item value="_service" priority="1" />
+      <Item value="IDeliveryWebService`0" priority="0" />
+      <Item value="_mockSecurityService" priority="3" />
+      <Item value="LoginResponse" priority="0" />
+      <Item value="LoginResponse`0" priority="0" />
+      <Item value="ErrorMessage" priority="0" />
+      <Item value="_container" priority="3" />
+      <Item value="Status`0" priority="0" />
+      <Item value="Cleanup`0" priority="0" />
+      <Item value="IsIn`1" priority="1" />
+      <Item value="connection" priority="0" />
+      <Item value="ISession`0" priority="0" />
+      <Item value="sessionFactory" priority="1" />
+      <Item value="ISecurityService`0" priority="1" />
+      <Item value="SecurityService`0" priority="0" />
+      <Item value="IUserRepository`0" priority="1" />
+      <Item value="OpenGenericTypeListSpecificationExpression`0" priority="0" />
+      <Item value="IAuthKeyProvider`0" priority="2" />
+      <Item value="ISessionFactory`0" priority="1" />
+      <Item value="FluentConfiguration`0" priority="1" />
+      <Item value="_sessionFactory" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="ConfigureContainer`0" priority="0" />
+      <Item value="IBootstrapper`0" priority="0" />
+      <Item value="container" priority="2" />
+      <Item value="session" priority="2" />
+      <Item value="bootstrapper" priority="1" />
+      <Item value="config" priority="0" />
+      <Item value="transaction" priority="1" />
+      <Item value="DeliveryWebService`0" priority="1" />
+      <Item value="given_a_user_repository`0" priority="0" />
+      <Item value="_user" priority="1" />
+      <Item value="using" priority="2" />
+      <Item value="GuidBasedAuthKeyProvider`0" priority="1" />
+      <Item value="_provider" priority="0" />
+      <Item value="OperationContract" priority="0" />
+      <Item value="DataMember" priority="0" />
+      <Item value="Bootstrapper`0" priority="0" />
+      <Item value="try" priority="0" />
+      <Item value="_exectedUser" priority="0" />
+      <Item value="CurrentAuthKey" priority="2" />
+      <Item value="_itemService" priority="0" />
+      <Item value="Id" priority="2" />
+      <Item value="ItemService`0" priority="0" />
+      <Item value="List&lt;Item&gt;" priority="0" />
+      <Item value="Item`0" priority="0" />
+      <Item value="Item" priority="0" />
+      <Item value="_expectedListOfItems" priority="0" />
+      <Item value="AuthorizationRequest`0" priority="0" />
+      <Item value="_mockItemRepository" priority="0" />
+      <Item value="c" priority="0" />
+      <Item value="given_a_delivery_service_context`0" priority="1" />
+      <Item value="MockSecurityService" priority="0" />
+      <Item value="object" priority="0" />
+      <Item value="Service" priority="2" />
+      <Item value="DeliveryItemData`0" priority="2" />
+      <Item value="DeliveryItemData" priority="0" />
+      <Item value="DeliveryItem" priority="0" />
+      <Item value="ItemStatus`0" priority="0" />
+      <Item value="DeliveryItemStatus`0" priority="5" />
+      <Item value="someAuthKey" priority="0" />
+      <Item value="UserData`0" priority="0" />
+      <Item value="AssignedItems" priority="0" />
+      <Item value="Builder" priority="1" />
+      <Item value="DeliveryItem`0" priority="1" />
+      <Item value="DeliveryItemSummary" priority="0" />
+      <Item value="DeliveryItemSummary`0" priority="2" />
+      <Item value="List&lt;DeliveryItemSummary&gt;" priority="0" />
+      <Item value="Domain" priority="1" />
+      <Item value="deliveryItems" priority="0" />
+      <Item value="char" priority="0" />
+      <Item value="Items" priority="2" />
+      <Item value="Assigned" priority="0" />
+      <Item value="List&lt;DeliveryItem&gt;" priority="2" />
+      <Item value="_expectedProfile" priority="0" />
+      <Item value="int" priority="0" />
+      <Item value="_itemType" priority="1" />
+      <Item value="sealed" priority="0" />
+      <Item value="ClassMap" priority="0" />
+      <Item value="ctor" priority="1" />
+      <Item value="Id`1" priority="0" />
+      <Item value="Map`0" priority="1" />
+      <Item value="this" priority="0" />
+      <Item value="HasMany`1" priority="0" />
+      <Item value="_expectedDeliveryItem" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.String">
-      <Item value="ShouldEqual`1" priority="0" />
+      <Item value="ShouldEqual`1" priority="3" />
+      <Item value="Contains`0" priority="0" />
+      <Item value="ShouldNotBeNull`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Moq.Mock`1">
-      <Item value="Object" priority="3" />
-      <Item value="Setup`1" priority="5" />
+      <Item value="Object" priority="7" />
+      <Item value="Setup`1" priority="8" />
       <Item value="Verify`1" priority="0" />
       <Item value="SetupGet`1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Moq.It">
-      <Item value="Is`1" priority="7" />
+      <Item value="Is`1" priority="12" />
       <Item value="IsAny`1" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:TValue">
@@ -168,11 +275,12 @@
       <Item value="Query`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Moq.Language.Flow.ISetup`2">
-      <Item value="Returns`4" priority="3" />
+      <Item value="Returns`4" priority="4" />
+      <Item value="Throws`1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:iGoat.Domain.IUserRepository">
-      <Item value="GetUser`0" priority="4" />
-      <Item value="UpdateNewAuthKey`0" priority="0" />
+      <Item value="GetUser`0" priority="5" />
+      <Item value="UpdateNewAuthKey`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:iGoat.Domain.User">
       <Item value="Status" priority="0" />
@@ -180,18 +288,20 @@
       <Item value="Password" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Machine.Specifications.Catch">
-      <Item value="Exception`0" priority="1" />
+      <Item value="Exception`0" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:iGoat.Domain.ISecurityService">
-      <Item value="GetAuthKey`0" priority="0" />
-      <Item value="GetUser`0" priority="0" />
+      <Item value="GetAuthKey`0" priority="2" />
+      <Item value="GetUser`0" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Exception">
       <Item value="ShouldContainErrorMessage`0" priority="1" />
+      <Item value="Message" priority="1" />
+      <Item value="ShouldBeOfType`1" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@iGoat.Domain.UserStatus">
       <Item value="Inactive" priority="0" />
-      <Item value="Active" priority="0" />
+      <Item value="Active" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:iGoat.Domain.AuthorizationRequest">
       <Item value="AuthKey" priority="0" />
@@ -201,12 +311,165 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
       <Item value="AsQueryable`0" priority="0" />
+      <Item value="ToExpectedObject`0" priority="0" />
+      <Item value="Select`2" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Type">
-      <Item value="Assembly" priority="0" />
+      <Item value="Assembly" priority="2" />
+      <Item value="Namespace" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:NHibernate.ISession">
-      <Item value="Save`0" priority="1" />
+      <Item value="Save`0" priority="7" />
+      <Item value="Transaction" priority="3" />
+      <Item value="Update`0" priority="0" />
+      <Item value="CreateSQLQuery`0" priority="0" />
+      <Item value="SaveOrUpdate`0" priority="0" />
+      <Item value="BeginTransaction`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.Cfg.Configuration">
+      <Item value="AddAssembly`0" priority="0" />
+      <Item value="CreateMappings`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FluentNHibernate.Cfg.Fluently">
+      <Item value="Configure`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.FluentConfiguration">
+      <Item value="Mappings`0" priority="1" />
+      <Item value="Database`0" priority="0" />
+      <Item value="BuildSessionFactory`0" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.MappingConfiguration">
+      <Item value="AutoMappings" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Cfg.AutoMappingsContainer">
+      <Item value="Add`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FluentNHibernate.Automapping.AutoMap">
+      <Item value="Assemblies`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Automapping.AutoPersistenceModel">
+      <Item value="Where`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.IContainer">
+      <Item value="GetInstance`1" priority="3" />
+      <Item value="Configure`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iGoat.Service.IDeliveryWebService">
+      <Item value="Login`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ITransaction">
+      <Item value="Begin`0" priority="2" />
+      <Item value="Rollback`0" priority="0" />
+      <Item value="Commit`0" priority="1" />
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iGoat.Service.LoginResponse">
+      <Item value="AuthKey" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.ConfigurationExpression">
+      <Item value="For`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.Configuration.DSL.Expressions.CreatePluginFamilyExpression`1">
+      <Item value="Use`0" priority="2" />
+      <Item value="Singleton`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NHibernate.ISessionFactory">
+      <Item value="OpenSession`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iGoat.Data.Bootstrapper">
+      <Item value="Run`0" priority="1" />
+      <Item value="GetFluentConfiguration`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.Container">
+      <Item value="GetInstance`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iGoat.Domain.Entities.User">
+      <Item value="Id" priority="1" />
+      <Item value="CurrentAuthKey" priority="1" />
+      <Item value="ToExpectedObject`0" priority="0" />
+      <Item value="AssignedItems" priority="1" />
+      <Item value="Items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iGoat.Domain.GuidBasedAuthKeyProvider">
+      <Item value="GetNewAuthKey`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Guid">
+      <Item value="NewGuid`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Guid">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@StructureMap.ObjectFactory">
+      <Item value="Container" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iGoat.Service.Bootstrapper">
+      <Item value="Run`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NCommons.Testing.Equality.ExpectedObject">
+      <Item value="ShouldEqual`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@iGoat.Domain.Entities.ItemStatus">
+      <Item value="Assigned" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iGoat.Domain.Entities.DeliveryItem">
+      <Item value="Id" priority="3" />
+      <Item value="Status" priority="4" />
+      <Item value="ItemType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="ToList`1" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FizzWare.NBuilder.Builder`1">
+      <Item value="CreateListOfSize`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FizzWare.NBuilder.IListBuilder`1">
+      <Item value="Build`0" priority="3" />
+      <Item value="WhereAll`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="ToList`1" priority="0" />
+      <Item value="Select`2" priority="1" />
+      <Item value="Where`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@iGoat.Domain.Entities.DeliveryItemStatus">
+      <Item value="Assigned" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@iGoat.Service.DeliveryItemStatus">
+      <Item value="Assigned" priority="0" />
+      <Item value="InTruck" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FizzWare.NBuilder.IOperable`1">
+      <Item value="Have`2" priority="0" />
+      <Item value="And`1" priority="0" />
+      <Item value="WhereTheLast`1" priority="0" />
+      <Item value="Has`2" priority="0" />
+      <Item value="Build`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@iGoat.Domain.DeliveryItemStatus">
+      <Item value="Assigned" priority="0" />
+      <Item value="InTruck" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iGoat.Domain.Entities.Profile">
+      <Item value="Items" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iGoat.Data.DeliveryItemMap">
+      <Item value="HasOne`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.OneToOnePart`1">
+      <Item value="ForeignKey`0" priority="0" />
+      <Item value="Cascade" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.OneToManyPart`1">
+      <Item value="LazyLoad`0" priority="0" />
+      <Item value="Cascade" priority="0" />
+      <Item value="Not" priority="1" />
+      <Item value="AsBag`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.CollectionCascadeExpression`1">
+      <Item value="All`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.CascadeExpression`1">
+      <Item value="All`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

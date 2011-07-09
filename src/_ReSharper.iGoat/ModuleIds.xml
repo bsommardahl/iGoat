@@ -3,4 +3,8 @@
   <Module PersistentId="59B44C0D-7E40-4DA6-ABB9-EC08BFE43E26" ModuleId="iGoat.Domain.Specs" />
   <Module PersistentId="898FB6F2-F04A-4E93-B5DA-9BF673B9D861" ModuleId="iGoat.Data" />
   <Module PersistentId="1F6C4067-5EAF-4A5B-95B6-DF79FBBFB53D" ModuleId="iGoat.Data.Specs" />
+  <Module PersistentId="6752908C-A798-4952-9759-483E06B2D095" ModuleId="iGoat.Service" />
+  <Module PersistentId="061B8F56-5CAF-499B-A69B-B7365175BBC9" ModuleId="iGoat.Service.Specs" />
+  <Module PersistentId="82B5820B-8ECA-447D-A631-8C5848C1C0F8" ModuleId="iGoat.Data.Specs.Integration" />
+  <Module PersistentId="42DE6E1B-9F33-4C9C-8949-BC3266C30064" ModuleId="DatabaseUtility" />
 </Modules>
