@@ -77,7 +77,7 @@ namespace iGoat.Data.Specs
                                             Session.Clear();
                                         };
 
-        private Because of = () => _result = ProfileRepository.GetUser(AuthKey);
+        private Because of = () => _result = ProfileRepository.Get(AuthKey);
 
         private It should_return_the_expected_user = () => _expectedProfile.ToExpectedObject().ShouldEqual(_result);
     }

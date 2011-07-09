@@ -18,7 +18,7 @@ namespace iGoat.Domain
 
         public string GetAuthKey(string userName, string password)
         {
-            Profile profile = _profileRepository.GetUser(userName, password);
+            Profile profile = _profileRepository.Get(userName, password);
 
             CheckStatus(profile);
 
@@ -30,7 +30,7 @@ namespace iGoat.Domain
 
         public Profile GetProfile(string authKey)
         {
-            Profile profile = _profileRepository.GetUser(authKey);
+            Profile profile = _profileRepository.Get(authKey);
             CheckStatus(profile);
             return profile;
         }

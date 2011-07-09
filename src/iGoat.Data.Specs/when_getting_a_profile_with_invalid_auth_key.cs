@@ -9,7 +9,7 @@ namespace iGoat.Data.Specs
 
         private Establish context = () => { };
 
-        private Because of = () => _exception = Catch.Exception(() => ProfileRepository.GetUser("some auth key"));
+        private Because of = () => _exception = Catch.Exception(() => ProfileRepository.Get("some auth key"));
 
         private It should_throw_the_expected_exception_message =
             () => _exception.Message.ShouldEqual("Invalid auth key.");

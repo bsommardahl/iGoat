@@ -52,7 +52,7 @@ namespace iGoat.Data.Specs
                                             Session.Clear();
                                         };
 
-        private Because of = () => _result = ProfileRepository.GetUser(Username, Password);
+        private Because of = () => _result = ProfileRepository.Get(Username, Password);
 
         private It should_return_the_expected_user = () => _expectedProfile.ToExpectedObject().ShouldEqual(_result);
     }

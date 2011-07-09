@@ -4,8 +4,8 @@ namespace iGoat.Domain
 {
     public interface IProfileRepository
     {
-        Profile GetUser(string username, string password);
+        Profile Get(string username, string password);
         void UpdateNewAuthKey(Profile profile, string authKey);
-        Profile GetUser(string authKey);
+        Profile Get(string authKey);
     }
 }

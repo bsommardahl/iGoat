@@ -24,7 +24,7 @@ namespace iGoat.Domain.Specs
                                                                    };
 
                                             MockUserRepository.Setup(
-                                                x => x.GetUser(Moq.It.Is<string>(y => y == AuthKey)))
+                                                x => x.Get(Moq.It.Is<string>(y => y == AuthKey)))
                                                 .Returns(_expectedProfile);
                                         };
 

@@ -12,7 +12,7 @@ namespace iGoat.Domain.Specs
         private static Exception _exception;
 
         private Establish context = () => MockUserRepository
-                                              .Setup(x => x.GetUser(It.Is<string>(y => y == Username),
+                                              .Setup(x => x.Get(It.Is<string>(y => y == Username),
                                                                     It.Is<string>(y => y == Password)))
                                               .Returns(new Profile
                                                            {

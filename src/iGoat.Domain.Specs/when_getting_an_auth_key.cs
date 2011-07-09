@@ -19,7 +19,7 @@ namespace iGoat.Domain.Specs
                                                                         };
 
                                               MockUserRepository
-                                                  .Setup(x => x.GetUser(Moq.It.Is<string>(y => y == Username),
+                                                  .Setup(x => x.Get(Moq.It.Is<string>(y => y == Username),
                                                                         Moq.It.Is<string>(y => y == Password)))
                                                   .Returns(_profileFromRepository);
 

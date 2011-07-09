@@ -9,7 +9,7 @@ namespace iGoat.Domain.Specs
         private const string AuthKey = "some authKey";
         private static Exception _exception;
 
-        private Establish context = () => MockUserRepository.Setup(x => x.GetUser(AuthKey))
+        private Establish context = () => MockUserRepository.Setup(x => x.Get(AuthKey))
                                               .Returns(new Profile {Status = UserStatus.Inactive});
 
         private Because of =
