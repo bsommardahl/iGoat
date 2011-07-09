@@ -16,7 +16,7 @@ namespace iGoat.Data
             _session = session;
         }
 
-        public Profile GetUser(string username, string password)
+        public Profile Get(string username, string password)
         {
             using(_session.BeginTransaction())
             {
@@ -39,7 +39,7 @@ namespace iGoat.Data
             }
         }
 
-        public Profile GetUser(string authKey)
+        public Profile Get(string authKey)
         {
             using (_session.BeginTransaction())
             {
