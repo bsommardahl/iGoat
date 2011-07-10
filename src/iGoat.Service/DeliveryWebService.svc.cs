@@ -64,6 +64,9 @@ namespace iGoat.Service
         {
             Profile profile = _profileService.GetProfile(authKey);
             var delivery = profile.Deliveries.SingleOrDefault(x => x.Id == deliveryId);
+            if (delivery == null)
+                throw new FaultException("Delivery not found.");
+
             return new DeliveryDetails
                        {
                            Id = delivery.Id,
@@ -86,6 +89,9 @@ namespace iGoat.Service
         {
             Profile profile = _profileService.GetProfile(authKey);
             var deliveryItem = profile.Items.SingleOrDefault(x => x.Id == deliveryItemId);
+            if (deliveryItem == null)
+                throw new FaultException("Delivery item not found.");
+
             return new DeliveryItemDetails
                        {
                            Id = deliveryItem.Id,

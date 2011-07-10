@@ -59,6 +59,8 @@
     <Compile Include="when_getting_delivered_item_summaries.cs" />
     <Compile Include="when_getting_details_for_a_specific_delivery.cs" />
     <Compile Include="when_getting_details_for_a_specific_delivery_item.cs" />
+    <Compile Include="when_getting_details_for_a_specific_delivery_item_that_does_not_exist.cs" />
+    <Compile Include="when_getting_details_for_a_specific_delivery_that_does_not_exist.cs" />
     <Compile Include="when_getting_my_deliveries.cs" />
     <Compile Include="when_logging_a_user_in.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
