@@ -23,7 +23,7 @@ namespace iGoat.Domain
             CheckStatus(profile);
 
             string authKey = _authKeyProvider.GetNewAuthKey(userName, password);
-            _profileRepository.UpdateNewAuthKey(profile, authKey);
+            _profileRepository.UpdateNewAuthKey(profile.Id, authKey);
 
             return authKey;
         }

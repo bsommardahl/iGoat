@@ -2,6 +2,7 @@
 using System.Linq;
 using FizzWare.NBuilder;
 using iGoat.Domain.Entities;
+using iGoat.Service.Contracts;
 using Machine.Specifications;
 using NCommons.Testing.Equality;
 

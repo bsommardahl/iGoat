@@ -29,14 +29,15 @@ namespace iGoat.Data
             }            
         }
 
-        public void UpdateNewAuthKey(Profile profile, string authKey)
+        public void UpdateNewAuthKey(int profileId, string authKey)
         {
-            using(var transaction = _session.BeginTransaction())
-            {
+            //using(var transaction = _session.BeginTransaction())
+            //{
+                var profile = _session.Linq<Profile>().FirstOrDefault(x => x.Id == profileId);
                 profile.CurrentAuthKey = authKey;
                 _session.SaveOrUpdate(profile);
-                transaction.Commit();                
-            }
+                //transaction.Commit();                
+            //}
         }
 
         public Profile Get(string authKey)

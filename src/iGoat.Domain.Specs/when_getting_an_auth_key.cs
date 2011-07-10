@@ -38,7 +38,7 @@ namespace iGoat.Domain.Specs
             () =>
             MockUserRepository.Verify(
                 x =>
-                x.UpdateNewAuthKey(Moq.It.Is<Profile>(y => y == _profileFromRepository),
+                x.UpdateNewAuthKey(Moq.It.Is<int>(y => y == _profileFromRepository.Id),
                                    Moq.It.Is<string>(y => y == ExpectedAuthKey)));
     }
 }

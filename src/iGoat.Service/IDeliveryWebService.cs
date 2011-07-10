@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using iGoat.Service.Contracts;
 
 namespace iGoat.Service
 {
@@ -21,6 +22,9 @@ namespace iGoat.Service
         List<DeliverySummary> GetMyDeliveries(string authKey);
 
         [OperationContract]
-        DeliveryData GetDeliveryDetails(string authKey, int deliveryId);
+        DeliveryDetails GetDeliveryDetails(string authKey, int deliveryId);
+
+        [OperationContract]
+        DeliveryItemDetails GetDeliveryItemDetails(string authKey, int deliveryItemId);
     }
 }

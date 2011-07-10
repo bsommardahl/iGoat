@@ -1,4 +1,5 @@
 ﻿using iGoat.Domain;
+using iGoat.Service.Contracts;
 using Machine.Specifications;
 using It = Moq.It;
 

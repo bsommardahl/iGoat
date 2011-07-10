@@ -30,7 +30,7 @@ namespace iGoat.Data.Specs
                                             Session.Clear();
                                         };
 
-        private Because of = () => ProfileRepository.UpdateNewAuthKey(_profile, AuthKey);
+        private Because of = () => ProfileRepository.UpdateNewAuthKey(_profile.Id, AuthKey);
 
         private It should_set_the_auth_key_on_the_user =
             () => Session.Linq<Profile>().Single(x => x.Id == _profile.Id).CurrentAuthKey.ShouldEqual(AuthKey);

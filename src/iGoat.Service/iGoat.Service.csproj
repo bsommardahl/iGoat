@@ -94,17 +94,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrapper.cs" />
-    <Compile Include="DeliveryData.cs" />
-    <Compile Include="DeliveryItemData.cs" />
-    <Compile Include="DeliveryItemStatus.cs" />
-    <Compile Include="DeliverySummary.cs" />
+    <Compile Include="Contracts\DeliveryDetails.cs" />
+    <Compile Include="Contracts\DeliveryItemDetails.cs" />
+    <Compile Include="Contracts\DeliveryItemStatus.cs" />
+    <Compile Include="Contracts\DeliveryItemSummary.cs" />
+    <Compile Include="Contracts\DeliverySummary.cs" />
+    <Compile Include="Contracts\LocationData.cs" />
+    <Compile Include="Contracts\SuccessfulLoginResponse.cs" />
     <Compile Include="DeliveryWebService.svc.cs">
       <DependentUpon>DeliveryWebService.svc</DependentUpon>
     </Compile>
     <Compile Include="IDeliveryWebService.cs" />
-    <Compile Include="DeliveryItemSummary.cs" />
-    <Compile Include="LocationData.cs" />
-    <Compile Include="SuccessfulLoginResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StructureMapInstanceProvider.cs" />
     <Compile Include="StructureMapServiceBehavior.cs" />

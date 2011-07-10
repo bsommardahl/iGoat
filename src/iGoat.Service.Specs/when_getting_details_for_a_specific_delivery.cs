@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using FizzWare.NBuilder;
 using iGoat.Domain.Entities;
+using iGoat.Service.Contracts;
 using Machine.Specifications;
 using NCommons.Testing.Equality;
 
@@ -12,8 +13,8 @@ namespace iGoat.Service.Specs
     {
         private const int DeliveryId = 654;
         private const string AuthKey = "some auth key";
-        private static DeliveryData _result;
-        private static DeliveryData _expectedDeliveryItem;
+        private static DeliveryDetails _result;
+        private static DeliveryDetails _expectedDeliveryItem;
 
         private Establish context = () =>
                                         {
@@ -48,7 +49,7 @@ namespace iGoat.Service.Specs
                                                                                   }
                                                              });
 
-                                            _expectedDeliveryItem = new DeliveryData
+                                            _expectedDeliveryItem = new DeliveryDetails
                                                                         {
                                                                             Id = delivery.Id,
                                                                             CompletedOn = delivery.CompletedOn,

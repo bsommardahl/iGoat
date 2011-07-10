@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using iGoat.Domain;
+﻿using iGoat.Domain;
 using iGoat.Domain.Entities;
 using iGoat.Service;
+using iGoat.Service.Contracts;
 using Machine.Specifications;
 using NHibernate;
 using StructureMap;
-using DeliveryItemStatus = iGoat.Domain.DeliveryItemStatus;
 
 namespace iGoat.Data.Specs.Integration
 {
@@ -19,6 +17,16 @@ namespace iGoat.Data.Specs.Integration
         private static IDeliveryWebService _service;
         private static SuccessfulLoginResponse _result;
         private static ISession _session;
+        private static Profile _profile;
+
+        private Cleanup after = () =>
+                                    {
+                                        using (ITransaction tx = _session.BeginTransaction())
+                                        {
+                                            _session.Delete(_profile);
+                                            tx.Commit();
+                                        }
+                                    };
 
         private Establish context = () =>
                                         {
@@ -26,43 +34,26 @@ namespace iGoat.Data.Specs.Integration
                                             new Bootstrapper(_container).Run();
 
                                             _session = _container.GetInstance<ISession>();
-                                            _session.Transaction.Begin();
 
-                                            _itemType = new DeliveryItemType
-                                                            {
-                                                                Name = "something",
-                                                            };
+                                            _profile = new Profile
+                                                           {
+                                                               UserName = UserName,
+                                                               Password = Password,
+                                                               CurrentAuthKey = AuthKey,
+                                                               Status = UserStatus.Active,
+                                                           };
 
-                                            _expectedDeliveryItem = new DeliveryItem
-                                                                        {
-                                                                            Status = DeliveryItemStatus.Assigned,
-                                                                            ItemType = _itemType,
-                                                                        };
-                                            
-                                            _session.Save(_itemType);
-                                            _session.Save(_expectedDeliveryItem);
+                                            using (ITransaction tx = _session.BeginTransaction())
+                                            {
+                                                _session.Save(_profile);
+                                                tx.Commit();
+                                            }
 
-                                            _session.Save(new Profile
-                                                              {
-                                                                  Password = Password,
-                                                                  UserName = UserName,
-                                                                  CurrentAuthKey = AuthKey,
-                                                                  Status = UserStatus.Active,
-                                                                  Items = new List<DeliveryItem>
-                                                                              {
-                                                                                  _expectedDeliveryItem
-                                                                              }
-                                                              });
-                                            
                                             _service = _container.GetInstance<IDeliveryWebService>();
                                         };
 
         private Because of = () => _result = _service.Login(UserName, Password);
 
         private It should_return_the_an_auth_key = () => _result.AuthKey.ShouldNotBeEmpty();
-
-        private Cleanup after_finished = () => _session.Transaction.Rollback();
-        private static DeliveryItem _expectedDeliveryItem;
-        private static DeliveryItemType _itemType;
     }
 }

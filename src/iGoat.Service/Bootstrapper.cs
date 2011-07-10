@@ -28,7 +28,8 @@ namespace iGoat.Service
             return Fluently.Configure()
                 .Database(MsSqlConfiguration.MsSql2008
                               .ConnectionString(
-                                  c => c.FromConnectionStringWithKey("iGoatDatabase")))
+                                  c => c.FromConnectionStringWithKey("iGoatDatabase")).ShowSql())
+
                 .Mappings(
                     x =>
                     x.AutoMappings.Add(

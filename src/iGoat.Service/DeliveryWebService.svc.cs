@@ -4,6 +4,8 @@ using System.Linq;
 using System.ServiceModel;
 using iGoat.Domain;
 using iGoat.Domain.Entities;
+using iGoat.Service.Contracts;
+using DeliveryItemStatus = iGoat.Service.Contracts.DeliveryItemStatus;
 
 namespace iGoat.Service
 {
@@ -57,11 +59,11 @@ namespace iGoat.Service
                                                       }).ToList();            
         }
 
-        public DeliveryData GetDeliveryDetails(string authKey, int deliveryId)
+        public DeliveryDetails GetDeliveryDetails(string authKey, int deliveryId)
         {
             Profile profile = _profileService.GetProfile(authKey);
             var delivery = profile.Deliveries.SingleOrDefault(x => x.Id == deliveryId);
-            return new DeliveryData
+            return new DeliveryDetails
                        {
                            Id = delivery.Id,
                            CompletedOn = delivery.CompletedOn,
@@ -76,6 +78,18 @@ namespace iGoat.Service
                                                                       Id = x.Id,
                                                                       Type = x.ItemType.ToString(),
                                                                   }).ToList()
+                       };
+        }
+
+        public DeliveryItemDetails GetDeliveryItemDetails(string authKey, int deliveryItemId)
+        {
+            Profile profile = _profileService.GetProfile(authKey);
+            var deliveryItem = profile.Items.SingleOrDefault(x => x.Id == deliveryItemId);
+            return new DeliveryItemDetails
+                       {
+                           Id = deliveryItem.Id,
+                           Status = deliveryItem.Status.ToString(),
+                           Type = deliveryItem.ItemType.Name,
                        };
         }
 
