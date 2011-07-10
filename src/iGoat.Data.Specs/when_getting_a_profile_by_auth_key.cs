@@ -10,16 +10,22 @@ namespace iGoat.Data.Specs
 {
     public class when_getting_a_profile_by_auth_key : given_a_user_repository
     {
-        private const string AuthKey = "some auth key";
+        private const string InstanceKey = "some auth key";
         private static Profile _result;
         private static DeliveryItemType _itemType;
         private static DeliveryItem _expectedDeliveryItem;
         private static Profile _expectedProfile;
         private static Delivery _expectedDelivery;
         private static Location _location;
+        private static Instance _currentInstance;
+        private static DateTime _expires;
 
         private Establish context = () =>
                                         {
+                                            DateTime now = new DateTime(2020, 1, 1);
+                                            _expires = now.AddDays(1);
+                                            MockTimeProvider.Setup(x => x.Now()).Returns(now);
+
                                             _itemType = new DeliveryItemType
                                                             {
                                                                 Name = "something",
@@ -48,12 +54,18 @@ namespace iGoat.Data.Specs
                                                                         Location = _location
                                                                     };
 
+                                            _currentInstance = new Instance
+                                                                   {
+                                                                       AuthKey = InstanceKey,
+                                                                       Expires = _expires,
+                                                                   };
+
                                             _expectedProfile = new Profile
                                                                    {
                                                                        Status = UserStatus.Active,
                                                                        UserName = "some username",
                                                                        Password = "some password",
-                                                                       CurrentAuthKey = AuthKey,
+                                                                       CurrentInstance = _currentInstance,
                                                                        Items = new List<DeliveryItem>
                                                                                    {
                                                                                        _expectedDeliveryItem,
@@ -66,6 +78,7 @@ namespace iGoat.Data.Specs
 
                                             using (ITransaction tx = Session.BeginTransaction())
                                             {
+                                                Session.Save(_currentInstance);
                                                 Session.Save(_itemType);
                                                 Session.Save(_expectedDeliveryItem);
                                                 Session.Save(_location);
@@ -77,8 +90,11 @@ namespace iGoat.Data.Specs
                                             Session.Clear();
                                         };
 
-        private Because of = () => _result = ProfileRepository.Get(AuthKey);
+        private Because of = () => _result = ProfileRepository.Get(InstanceKey);
 
-        private It should_return_the_expected_user = () => _expectedProfile.ToExpectedObject().ShouldEqual(_result);
+        private It should_return_the_expected_profile = () =>
+                                                            {
+                                                                _expectedProfile.ToExpectedObject().ShouldEqual(_result);
+                                                            };
     }
 }

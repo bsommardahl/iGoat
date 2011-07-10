@@ -1,4 +1,5 @@
-﻿using iGoat.Domain;
+﻿using System;
+using iGoat.Domain;
 using iGoat.Domain.Entities;
 using iGoat.Service;
 using iGoat.Service.Contracts;
@@ -17,7 +18,7 @@ namespace iGoat.Data.Specs.Integration
         private static IDeliveryWebService _service;
         private static SuccessfulLoginResponse _result;
         private static ISession _session;
-        private static Profile _profile;
+        private static Profile _profile;        
 
         private Cleanup after = () =>
                                     {
@@ -35,16 +36,26 @@ namespace iGoat.Data.Specs.Integration
 
                                             _session = _container.GetInstance<ISession>();
 
+                                            var expires = new DateTime(2020, 4, 3);
+
+                                            var authKey = new Instance
+                                                              {
+                                                                  AuthKey = AuthKey,
+                                                                  Expires =
+                                                                      expires,
+                                                              };
+
                                             _profile = new Profile
                                                            {
                                                                UserName = UserName,
                                                                Password = Password,
-                                                               CurrentAuthKey = AuthKey,
                                                                Status = UserStatus.Active,
+                                                               CurrentInstance = authKey,
                                                            };
 
                                             using (ITransaction tx = _session.BeginTransaction())
                                             {
+                                                _session.Save(authKey);
                                                 _session.Save(_profile);
                                                 tx.Commit();
                                             }

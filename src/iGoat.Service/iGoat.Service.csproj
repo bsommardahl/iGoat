@@ -110,6 +110,7 @@
     <Compile Include="StructureMapServiceBehavior.cs" />
     <Compile Include="StructureMapServiceHost.cs" />
     <Compile Include="StructureMapServiceHostFactory.cs" />
+    <Compile Include="SystemTimeProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

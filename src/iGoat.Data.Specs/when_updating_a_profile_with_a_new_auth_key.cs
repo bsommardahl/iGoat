@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using iGoat.Domain;
 using iGoat.Domain.Entities;
 using Machine.Specifications;
@@ -11,9 +12,12 @@ namespace iGoat.Data.Specs
     {
         private const string AuthKey = "some new auth key";
         private static Profile _profile;
+        private static DateTime _expireDate;
 
         private Establish context = () =>
                                         {
+                                            _expireDate = new DateTime(2010, 3, 4);
+
                                             _profile = new Profile
                                                            {
                                                                UserName = "some username",
@@ -30,9 +34,9 @@ namespace iGoat.Data.Specs
                                             Session.Clear();
                                         };
 
-        private Because of = () => ProfileRepository.UpdateNewAuthKey(_profile.Id, AuthKey);
+        private Because of = () => ProfileRepository.UpdateNewAuthKey(_profile.Id, AuthKey, _expireDate);
 
         private It should_set_the_auth_key_on_the_user =
-            () => Session.Linq<Profile>().Single(x => x.Id == _profile.Id).CurrentAuthKey.ShouldEqual(AuthKey);
+            () => Session.Linq<Profile>().Single(x => x.Id == _profile.Id).CurrentInstance.AuthKey.ShouldEqual(AuthKey);
     }
 }

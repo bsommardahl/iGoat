@@ -47,6 +47,7 @@ namespace iGoat.Service
                         x.For<IProfileService>().Use<ProfileService>();
                         x.For<IProfileRepository>().Use<ProfileRepository>();
                         x.For<IAuthKeyProvider>().Use<GuidBasedAuthKeyProvider>();
+                        x.For<ITimeProvider>().Use<SystemTimeProvider>();
                     });
         }
     }

@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="when_getting_a_profile_by_auth_key.cs" />
+    <Compile Include="when_getting_a_profile_with_axpired_instance.cs" />
     <Compile Include="when_getting_a_user_by_username_and_password.cs" />
     <Compile Include="given_a_user_repository.cs" />
     <Compile Include="InMemoryDatabaseSpecificationFor.cs" />

@@ -85,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>p+rVIfYuCFFhvHaWp3bhlSRwtQc=</dsig:DigestValue>
+        <dsig:DigestValue>48/RN4qar3KZu//TLXNLVu5ZfdY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -114,38 +114,38 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="iGoat..Service.dll" size="15360">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="iGoat..Service.dll" size="16384">
       <assemblyIdentity name="iGoat..Service" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>jTLYA8KqkcMKcyijgGKOkCYXhYE=</dsig:DigestValue>
+        <dsig:DigestValue>HsdqemMQUyYXgVbOO2lf7z5iJhI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="iGoat.Data.dll" size="6656">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="iGoat.Data.dll" size="7168">
       <assemblyIdentity name="iGoat.Data" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>NGklw1dh1HbPLmOif2AcTFWs2yk=</dsig:DigestValue>
+        <dsig:DigestValue>FCJWE7hnLyYlg4yF3KnnvA4ERiQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="iGoat.Domain.dll" size="9216">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="iGoat.Domain.dll" size="9728">
       <assemblyIdentity name="iGoat.Domain" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>+atk0RdLBGB6U/B0P4lyEVDR0Tw=</dsig:DigestValue>
+        <dsig:DigestValue>ZKscVS7cbRaMYtPsxtUObdTWSyA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

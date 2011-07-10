@@ -52,6 +52,9 @@
     <Reference Include="Machine.Specifications">
       <HintPath>..\..\lib\Machine.Specifications.dll</HintPath>
     </Reference>
+    <Reference Include="NCommons.Testing">
+      <HintPath>..\..\lib\NCommons.Testing.dll</HintPath>
+    </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\..\lib\NHibernate.dll</HintPath>
     </Reference>

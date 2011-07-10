@@ -24,10 +24,11 @@ namespace iGoat.Service
         {
             try
             {
-                string authKey = _profileService.GetAuthKey(username, password);
+                var authKey = _profileService.GetAuthKey(username, password);
                 return new SuccessfulLoginResponse
                            {
-                               AuthKey = authKey
+                               AuthKey = authKey.AuthKey,
+                               Expires = authKey.Expires,
                            };
             }
             catch (UnauthorizedAccessException ex)

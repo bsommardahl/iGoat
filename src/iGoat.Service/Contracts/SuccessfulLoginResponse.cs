@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using System;
+using System.Runtime.Serialization;
 
 namespace iGoat.Service.Contracts
 {
@@ -7,5 +8,8 @@ namespace iGoat.Service.Contracts
     {
         [DataMember]
         public string AuthKey { get; set; }
+
+        [DataMember]
+        public DateTime Expires { get; set; }
     }
 }

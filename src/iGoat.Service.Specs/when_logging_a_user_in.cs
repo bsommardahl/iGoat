@@ -1,7 +1,8 @@
-﻿using iGoat.Domain;
+﻿using System;
+using iGoat.Domain.Entities;
 using iGoat.Service.Contracts;
 using Machine.Specifications;
-using It = Moq.It;
+using NCommons.Testing.Equality;
 
 namespace iGoat.Service.Specs
 {
@@ -9,17 +10,36 @@ namespace iGoat.Service.Specs
     {
         private const string Username = "some username";
         private const string Password = "some password";
-        private const string AuthKey = "some auth key";
+        private const string Key = "some auth key";
         private static SuccessfulLoginResponse _result;
+        private static readonly DateTime ExpireDate = new DateTime(2010, 1, 1);
+        private static SuccessfulLoginResponse _expectedResponse;
+        private static Instance _instance;
 
-        private Establish context = () => MockProfileService
-                                              .Setup(x => x.GetAuthKey(It.Is<string>(y => y == Username),
-                                                                       It.Is<string>(y => y == Password)))
-                                              .Returns(AuthKey);
+        private Establish context = () =>
+                                        {
+                                            _instance = new Instance
+                                                           {
+                                                               Id = 1,
+                                                               AuthKey = Key,
+                                                               Expires = ExpireDate,
+                                                           };
+
+                                            MockProfileService
+                                                .Setup(x => x.GetAuthKey(Moq.It.Is<string>(y => y == Username),
+                                                                         Moq.It.Is<string>(y => y == Password)))
+                                                .Returns(_instance);
+
+                                            _expectedResponse = new SuccessfulLoginResponse
+                                                                    {
+                                                                        AuthKey = Key,
+                                                                        Expires = ExpireDate,
+                                                                    };
+                                        };
 
         private Because of = () => _result = Service.Login(Username, Password);
 
-        private Machine.Specifications.It should_return_the_expected_response_with_auth_key =
-            () => _result.AuthKey.ShouldEqual(AuthKey);
+        private It should_return_the_expected_response_with_auth_key =
+            () => _result.AuthKey.ToExpectedObject().ShouldEqual(_result.AuthKey);
     }
 }

@@ -13,7 +13,7 @@ namespace iGoat.Domain.Entities
 
         public virtual string UserName { get; set; }
 
-        public virtual string CurrentAuthKey { get; set; }
+        public virtual Instance CurrentInstance { get; set; }
 
         public virtual IList<DeliveryItem> Items { get; set; }
 
