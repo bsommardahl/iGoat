@@ -26,5 +26,8 @@ namespace iGoat.Service
 
         [OperationContract]
         DeliveryItemDetails GetDeliveryItemDetails(string authKey, int deliveryItemId);
+
+        [OperationContract]
+        void ProcessEvent(IProcessEventRequest processEventRequest);
     }
 }

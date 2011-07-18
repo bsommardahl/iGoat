@@ -71,6 +71,12 @@ namespace iGoat.Data
             }
         }
 
+        public Profile Update(Profile profile)
+        {
+            _session.SaveOrUpdate(profile);
+            return profile;
+        }
+
         #endregion
     }
 }

@@ -7,7 +7,7 @@ using NHibernate;
 
 namespace iGoat.Data.Specs
 {
-    public class when_getting_a_user_by_username_and_password : given_a_user_repository
+    public class when_getting_a_user_by_username_and_password : given_a_profile_repository
     {
         private const string Username = "some username";
         private const string Password = "some password";

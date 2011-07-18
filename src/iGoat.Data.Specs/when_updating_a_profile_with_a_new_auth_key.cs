@@ -8,7 +8,7 @@ using NHibernate.Linq;
 
 namespace iGoat.Data.Specs
 {
-    public class when_updating_a_profile_with_a_new_auth_key : given_a_user_repository
+    public class when_updating_a_profile_with_a_new_auth_key : given_a_profile_repository
     {
         private const string AuthKey = "some new auth key";
         private static Profile _profile;

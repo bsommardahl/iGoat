@@ -22,3 +22,4 @@ C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data.Specs.Integration\obj\
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data.Specs.Integration\obj\Debug\iGoat.Data.Specs.Integration.dll
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data.Specs.Integration\obj\Debug\iGoat.Data.Specs.Integration.pdb
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data.Specs.Integration\bin\Debug\NCommons.Testing.dll
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data.Specs.Integration\bin\Debug\AutoMapper.dll

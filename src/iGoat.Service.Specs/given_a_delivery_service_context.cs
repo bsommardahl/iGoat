@@ -1,4 +1,5 @@
-﻿using iGoat.Domain;
+﻿using AutoMapper;
+using iGoat.Domain;
 using Machine.Specifications;
 using Moq;
 
@@ -8,11 +9,17 @@ namespace iGoat.Service.Specs
     {
         protected static IDeliveryWebService Service;
         protected static Mock<IProfileService> MockProfileService;
+        protected static Mock<IEventProcessorFactory> MockEventProcessorFactory;
+        protected static Mock<IMappingEngine> MockMappingEngine;
 
         private Establish base_context = () =>
                                              {
+                                                 MockEventProcessorFactory = new Mock<IEventProcessorFactory>();
                                                  MockProfileService = new Mock<IProfileService>();
-                                                 Service = new DeliveryWebService(MockProfileService.Object);                                            
-                                             };    
+                                                 MockMappingEngine = new Mock<IMappingEngine>();
+                                                 Service = new DeliveryWebService(MockProfileService.Object,
+                                                                                  MockEventProcessorFactory.Object,
+                                                                                  MockMappingEngine.Object);
+                                             };
     }
 }

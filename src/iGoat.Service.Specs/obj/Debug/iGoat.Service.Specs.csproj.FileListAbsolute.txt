@@ -20,3 +20,4 @@ C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Service.Specs\bin\Debug\NHi
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Service.Specs\bin\Debug\iGoat.Data.pdb
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Service.Specs\bin\Debug\NCommons.Testing.dll
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Service.Specs\bin\Debug\FizzWare.NBuilder.dll
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Service.Specs\bin\Debug\AutoMapper.dll

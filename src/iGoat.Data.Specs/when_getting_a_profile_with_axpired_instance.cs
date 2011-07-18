@@ -7,7 +7,7 @@ using NHibernate;
 
 namespace iGoat.Data.Specs
 {
-    public class when_getting_a_profile_with_expired_instance : given_a_user_repository
+    public class when_getting_a_profile_with_expired_instance : given_a_profile_repository
     {
         private const string Key = "some key";
         private static Exception _exception;

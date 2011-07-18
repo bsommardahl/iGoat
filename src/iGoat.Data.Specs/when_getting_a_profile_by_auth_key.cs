@@ -8,7 +8,7 @@ using NHibernate;
 
 namespace iGoat.Data.Specs
 {
-    public class when_getting_a_profile_by_auth_key : given_a_user_repository
+    public class when_getting_a_profile_by_auth_key : given_a_profile_repository
     {
         private const string InstanceKey = "some auth key";
         private static Profile _result;

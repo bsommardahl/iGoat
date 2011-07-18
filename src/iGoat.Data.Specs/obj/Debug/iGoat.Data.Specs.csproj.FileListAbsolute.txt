@@ -18,3 +18,4 @@ C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data.Specs\obj\Debug\Resolv
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data.Specs\obj\Debug\iGoat.Data.Specs.dll
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data.Specs\obj\Debug\iGoat.Data.Specs.pdb
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data.Specs\bin\Debug\System.Data.SQLite.dll
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Data.Specs\bin\Debug\StructureMap.dll

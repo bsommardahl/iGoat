@@ -34,6 +34,9 @@
     <Reference Include="NCommons.Persistence">
       <HintPath>..\..\lib\NCommons.Persistence.dll</HintPath>
     </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\..\lib\StructureMap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,20 +46,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddDeliveryEventProcessor.cs" />
+    <Compile Include="AddDeliveryItemToDelivery.cs" />
+    <Compile Include="AddDeliveryItemToDeliveryEventProcessor.cs" />
+    <Compile Include="DeliveryAddedResponse.cs" />
     <Compile Include="Entities\Instance.cs" />
     <Compile Include="Entities\Delivery.cs" />
     <Compile Include="Entities\DeliveryItem.cs" />
     <Compile Include="DeliveryItemStatus.cs" />
     <Compile Include="Entities\DeliveryItemType.cs" />
     <Compile Include="Entities\Location.cs" />
+    <Compile Include="EventProcessorFactory.cs" />
     <Compile Include="GuidBasedAuthKeyProvider.cs" />
     <Compile Include="IAuthKeyProvider.cs" />
+    <Compile Include="IEvent.cs" />
+    <Compile Include="IEventProcessor.cs" />
+    <Compile Include="IEventProcessorFactory.cs" />
+    <Compile Include="IProcessEventResponse.cs" />
     <Compile Include="IProfileService.cs" />
     <Compile Include="IProfileRepository.cs" />
     <Compile Include="ITimeProvider.cs" />
+    <Compile Include="NewDeliveryEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProfileService.cs" />
     <Compile Include="Entities\Profile.cs" />
+    <Compile Include="SuccessfulEventResponse.cs" />
     <Compile Include="UserStatus.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

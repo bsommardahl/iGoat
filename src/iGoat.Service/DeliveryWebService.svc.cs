@@ -2,20 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
+using AutoMapper;
 using iGoat.Domain;
 using iGoat.Domain.Entities;
 using iGoat.Service.Contracts;
 using DeliveryItemStatus = iGoat.Service.Contracts.DeliveryItemStatus;
+using Profile = iGoat.Domain.Entities.Profile;
 
 namespace iGoat.Service
 {
     public class DeliveryWebService : IDeliveryWebService
     {
         private readonly IProfileService _profileService;
+        private readonly IEventProcessorFactory _eventProcessorFactory;
+        private readonly IMappingEngine _mappingEngine;
 
-        public DeliveryWebService(IProfileService profileService)
+        public DeliveryWebService(IProfileService profileService, IEventProcessorFactory eventProcessorFactory, IMappingEngine mappingEngine)
         {
             _profileService = profileService;
+            _eventProcessorFactory = eventProcessorFactory;
+            _mappingEngine = mappingEngine;
         }
 
         #region IDeliveryWebService Members
@@ -98,6 +104,12 @@ namespace iGoat.Service
                            Status = deliveryItem.Status.ToString(),
                            Type = deliveryItem.ItemType.Name,
                        };
+        }
+
+        public void ProcessEvent(IProcessEventRequest processEventRequest)
+        {
+            var @event = _mappingEngine.Map<IProcessEventRequest, IEvent>(processEventRequest);
+            _eventProcessorFactory.Create(@event).Process(@event);
         }
 
         #endregion

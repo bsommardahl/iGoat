@@ -47,6 +47,9 @@
     <Reference Include="NCommons.Testing">
       <HintPath>..\..\lib\NCommons.Testing.dll</HintPath>
     </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\..\lib\StructureMap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -57,11 +60,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="given_a_profile_service_context.cs" />
+    <Compile Include="when_creating_an_event_processor_from_an_event.cs" />
     <Compile Include="when_getting_an_auth_key.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="when_getting_an_auth_key_for_inactive_user.cs" />
     <Compile Include="when_getting_a_profile.cs" />
     <Compile Include="when_getting_a_profile_that_doesnt_exist.cs" />
+    <Compile Include="when_processing_an_event_to_add_an_item_to_a_delivery.cs" />
+    <Compile Include="when_processing_an_event_to_add_a_delivery.cs" />
     <Compile Include="when_providing_a_new_auth_key.cs" />
   </ItemGroup>
   <ItemGroup>

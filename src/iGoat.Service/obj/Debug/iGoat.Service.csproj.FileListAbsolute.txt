@@ -17,3 +17,4 @@ C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Service\bin\NHibernate.dll
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Service\bin\NHibernate.Linq.dll
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Service\bin\StructureMap.dll
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Service\bin\iGoat.Data.pdb
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Service\bin\AutoMapper.dll

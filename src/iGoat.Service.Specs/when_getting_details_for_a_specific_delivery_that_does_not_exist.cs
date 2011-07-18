@@ -14,9 +14,7 @@ namespace iGoat.Service.Specs
             x => x.GetProfile(Moq.It.Is<string>(y => y == AuthKey)))
                                               .Returns(new Profile
                                                            {
-                                                               Deliveries = new List<Delivery>
-                                                                                {                                                                                      
-                                                                                }
+                                                               Deliveries = new List<Delivery>()
                                                            });
 
         private Because of = () => _exception = Catch.Exception(() => Service.GetDeliveryDetails(AuthKey, DeliveryId));

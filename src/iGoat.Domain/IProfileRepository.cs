@@ -8,5 +8,6 @@ namespace iGoat.Domain
         Profile Get(string username, string password);
         void UpdateNewAuthKey(int profileId, string key, DateTime expires);
         Profile Get(string key);
+        Profile Update(Profile profile);
     }
 }

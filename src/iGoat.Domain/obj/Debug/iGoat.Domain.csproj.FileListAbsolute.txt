@@ -4,3 +4,4 @@ C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Domain\bin\Debug\iGoat.Doma
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Domain\obj\Debug\iGoat.Domain.dll
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Domain\obj\Debug\iGoat.Domain.pdb
 C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Domain\bin\Debug\NCommons.Persistence.dll
+C:\Projects\Bread for a Hungry World\iGoat\src\iGoat.Domain\bin\Debug\StructureMap.dll

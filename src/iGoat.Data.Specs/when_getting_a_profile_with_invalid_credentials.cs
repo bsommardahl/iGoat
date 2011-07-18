@@ -3,7 +3,7 @@ using Machine.Specifications;
 
 namespace iGoat.Data.Specs
 {
-    public class when_getting_a_profile_with_invalid_credentials : given_a_user_repository
+    public class when_getting_a_profile_with_invalid_credentials : given_a_profile_repository
     {
         private const string Username = "some username";
         private const string Password = "some password";
