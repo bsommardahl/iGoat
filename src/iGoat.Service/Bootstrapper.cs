@@ -1,11 +1,12 @@
-﻿using FluentNHibernate.Automapping;
+﻿using AutoMapper;
+using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using iGoat.Data;
 using iGoat.Domain;
-using iGoat.Domain.Entities;
 using StructureMap;
 using ISession = NHibernate.ISession;
+using Profile = iGoat.Domain.Entities.Profile;
 
 namespace iGoat.Service
 {
@@ -48,6 +49,10 @@ namespace iGoat.Service
                         x.For<IProfileRepository>().Use<ProfileRepository>();
                         x.For<IAuthKeyProvider>().Use<GuidBasedAuthKeyProvider>();
                         x.For<ITimeProvider>().Use<SystemTimeProvider>();
+
+                        x.For<IEventProcessorFactory>().Use<EventProcessorFactory>();
+                        x.For<IMappingEngine>().Use<AutoMapperMappingEngine>();
+                        
                     });
         }
     }

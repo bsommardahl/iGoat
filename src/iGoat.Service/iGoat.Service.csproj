@@ -96,6 +96,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoMapperMappingEngine.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Contracts\DeliveryDetails.cs" />
     <Compile Include="Contracts\DeliveryItemDetails.cs" />
